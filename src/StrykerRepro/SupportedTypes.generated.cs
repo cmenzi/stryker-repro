@@ -12,7 +12,7 @@ namespace StrykerRepro
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
 
-    internal sealed partial class SupportedTypes : ReadOnlyDictionary<Type, string>
+    internal sealed partial class SupportedTypes
     {
         private SupportedTypes()
             : base(new Dictionary<Type, string> { { typeof(byte), "byte" }, { typeof(sbyte), "sbyte" }, { typeof(short), "short" }, { typeof(ushort), "ushort" }, { typeof(int), "int" }, { typeof(uint), "uint" }, { typeof(long), "long" }, { typeof(ulong), "ulong" }, { typeof(float), "float" }, { typeof(double), "double" }, { typeof(decimal), "decimal" }, { typeof(bool), "bool" }, { typeof(char), "char" }, { typeof(DateTimeOffset), "DateTimeOffset" }, { typeof(DateTime), "DateTime" }, { typeof(string), "string" } })

@@ -19,7 +19,7 @@ namespace StrykerRepro
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
 
-    internal sealed partial class SupportedTypes : ReadOnlyDictionary<Type, string>
+    internal sealed partial class SupportedTypes
     {
         private SupportedTypes()
             : base(new Dictionary<Type, string> { <#= string.Join(", ", supportedTypes.Select(x => $"{{ typeof({x.Value}), \"{x.Value}\" }}")) #> })
